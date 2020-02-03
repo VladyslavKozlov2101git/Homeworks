@@ -12,16 +12,17 @@
     height: 113px;
     width: 157px;
     bottom: 24px;
-    left: 24px
+    left: 24px;
+    opacity: .8;
 }
 
 .img2{
     position: absolute;
-    height: 109px;
-    width: 146px;
-    bottom: 131px;
-    left: 503px;
-    opacity: .9;
+    height: 155px;
+    width: 135px;
+    bottom: 98px;
+    left: 609px;
+    opacity: 0.85;
 }
 
 .img3{
@@ -66,13 +67,15 @@
     bottom: 156px;
     right: 44px;
     z-index: 15;
+    opacity: .8;
 }
 .img8{
     position: absolute;
-    height: 92px;
-    width: 128px;
-    bottom: 121px;
-    left: 288px;
+    height: 77px;
+    width: 111px;
+    bottom: 136px;
+    left: 306px;
+    opacity: .9;
 }
 
 .img9{
@@ -86,10 +89,10 @@
 
 .img10{
     position: absolute;
-    height: 78px;
-    width: 104px;
-    top: 85px;
-    left: 45px;
+    height: 31px;
+    width: 98px;
+    bottom: 265px;
+    left: 87px;
     opacity: .7;
 }
 
