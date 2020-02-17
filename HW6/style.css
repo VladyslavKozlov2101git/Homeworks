@@ -23,6 +23,11 @@ thead,
 
 th{
     font-weight: normal;
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
 }
 
 .table-body__title{
@@ -125,4 +130,8 @@ th{
 }
 .width-s{
     width: 100px;  
+}
+
+.width-xs{
+    width: 80px;  
 }
