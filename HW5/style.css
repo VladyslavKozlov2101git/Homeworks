@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+}
+*::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+@font-face {
+    font-family: 'nk147regular';
+    src: url('fonts/18891-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.content{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+body{
+    margin: 0;
+    font-family: Montserrat,sans-serif;
+}
+
+/*********************
+********HEADER********
+*********************/
+
+.header{
+    
+    height: 48px;
+    width: inherit;
+    background-color:#191a1e;
+    align-items: left;
+    
+}
+
+.logo,
+.footer__logo{
+    width: 160px;
+    float: left;
+    
+}
+
+.logo__description{
+    color: #ffffff;
+    display: block;
+    margin-top: 15px;
+    
+}
+
+.logo__image{
+    height: 32px;
+    width: 32px;
+    float: left;
+    margin: 5px;
+
+}
+
+
+.header-navigation__items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.header-navigation__item{
+    float: left;
+    position: relative;
+    
+    
+}
+
+.header-navigation__item a{
+    color: #ffffff;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    
+   
+}
+.header-navigation__item a:hover{
+    color:#f71;
+    
+    
+}
+.header-navigation__items:first-child
+.header-navigation__item:first-child{
+    border-right: 1px solid white;
+}
+
+#donate,
+#donate2{
+    background-color: #f71;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 100px;
+    padding-bottom: 3px;
+}
+#donate:hover,
+#donate2:hover{
+    color: white;
+    opacity: .9;
+}
+
+/*********************
+***UNDER_NAVIGATION***
+*********************/
+
+.sub-header-navigation{
+    border-bottom: 1px solid #e4e4e4;
+    height: 48px;
+    font-family:'nk147regular';
+}
+
+.menu,
+.menu__s-items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.menu{
+    background: #fff;
+    
+}
+
+.menu a{
+    color: black;
+    font-weight: 400;
+}
+
+.menu__item{
+    float: left;
+    position: relative;
+}
+
+.menu__s-items{
+    display: none;
+    position: absolute;
+    background: gray;
+    width: 150px;
+}
+
+.menu a{
+    display: block;
+    padding: 14px 14px;
+    text-decoration: none;   
+}
+.menu__item:first-child a{
+    padding: 14px 14px 14px 2px;
+}
+
+
+.menu a:hover{
+    background-color: gray;
+    border-bottom: rgb(87, 86, 86);
+}
+ 
+.menu__item:hover 
+.menu__s-items{
+    display: block;
+    color: blanchedalmond;
+    z-index: 30;
+}
+
+.menu__s-item > a:hover{
+    text-decoration: underline;
+    background-color: #f71;
+}
+
+/*********************
+********MAIN**********
+*********************/
+.newsBlock{
+    width: calc(100% / 4 * 3);    
+    float: left;
+    margin-top: 5px;
+}
+.wideCard{
+    height: 380px;
+    position: relative;    
+}
+
+.wideCard__image{
+    width: 790px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;  
+}
+.wideCard__time{
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #ffffff;
+    position: absolute;
+    z-index: 20;
+    bottom: 10px;
+    left: 15px;
+    font-family:'nk147regular';  
+}
+.wideCard__title >a{
+    text-shadow: 0 1px 2px rgba(0,0,0,.4);
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 40px;
+    margin: 12px 0 20px;
+    word-wrap: break-word;
+    position: absolute;
+    z-index: 20;
+    bottom: 30px;
+    left: 15px;
+    max-width: 760px;
+    cursor: pointer;
+    text-decoration: none; 
+    
+}
+
+.wideCard__title:hover>a{
+    color:#f71;
+}
+
+.wideCard__border-bottom{
+    width: 790px;
+    margin: 8px 0px;
+
+}
+
+/*********************
+******NewsCard********
+*********************/
+
+.NewsCard{
+    width: calc(100%/2);
+    float: left;
+    cursor: pointer;
+}
+.NewsCard > figure{
+    margin: 0;
+}
+
+.NewsCard__image{
+    width: 385px;
+    height: 265px;
+
+}
+
+.NewsCard__time,
+.lastNews__time{
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #9d9d9d;
+    font-family:'nk147regular';
+}
+
+
+/*********************
+********ASIDE*********
+*********************/
+
+.newsBar{
+    width: calc(100% / 4);
+    height: 820px;
+    float: right;
+    background-color: #f8f8f8;
+    padding: 0 20px 20px;
+    border-top: 4px solid #ff8b33;
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+
+.newsBar__title{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 32px;
+    color: #191a1e;
+    
+}
+
+.lastNews{
+    border-bottom: 1px solid #9d9d9d;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 206px;
+}
+
+.lastNews__title>a:link,
+.NewsCard__title>a:link{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    color: black
+       
+}
+
+
+.lastNews__title>a:visited,
+.NewsCard__title>a:visited{
+    color: rgb(88, 84, 84);
+}
+
+
+.lastNews__title>a:hover,
+.NewsCard__title>a:hover{
+    color: #ff8b33;
+}
+
+.lastNews>h3>a:active,
+.NewsCard__title>a:active{
+    color: #ff8b33;
+}
+
+
+
+/*********************
+*******FOOTER*********
+*********************/
+.footer{
+    height: 62px;
+    width: inherit;
+    background-color:#191a1e;
+    align-items: left;
+    margin-top: 5px;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    
+
+}
+.footer__image{
+    height: 55px;
+    width: 55px;
+}
+
+    
+.footer__items{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__item{
+    float: left;
+    position: relative;
+}
+
+.footer__items a{
+    color: #ffffff;
+    display: block;
+    padding: 5px 15px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+.footer__items a:hover{
+    color:#f71;
+}
+
+.footer__logo{
+    width: 80px;
+}
+
+.footer__items:last-child{
+    margin-left: 65px;
+}

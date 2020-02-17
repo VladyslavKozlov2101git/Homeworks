@@ -1,0 +1,128 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.table{
+    border: 1px solid black;
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+.table-body{
+    border-collapse: collapse;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+thead,
+.table-body__1st-row th:first-child{
+    border: 2px solid black;
+}
+
+th{
+    font-weight: normal;
+}
+
+.table-body__title{
+    font-weight: 700;
+}
+
+
+.table-body__4th-row:first-child td:first-child,
+.table-body__8th-row:first-child td:first-child{
+    border-right: 0;
+    text-align:left;
+    vertical-align: top;
+
+}
+
+.table-body__6th-row td:first-child,
+.table-body__4th-row td:nth-child(2){
+    border-left: 0;
+    border-right: 0;
+}
+
+.table-body__4th-row td:nth-child(3),
+.table-body__6th-row td:nth-child(2),
+.table-body__8th-row td:nth-child(2),
+.table-body__4th-row td:nth-child(n+4),
+.table-body__6th-row td:nth-child(n+3),
+.table-body__8th-row td:nth-child(n+3){
+    border-bottom: 0;
+}
+
+.table-body__5th-row td:first-child,
+.table-body__7th-row td:first-child,
+.table-body__9th-row td:first-child,
+.table-body__3rd-row,
+.table-body__5th-row td:nth-child(n+2),
+.table-body__7th-row td:nth-child(n+2),
+.table-body__9th-row td:nth-child(n+2){
+    border-top: 0;
+}
+
+
+.table-body__4th-row td:nth-child(n+4),
+.table-body__6th-row td:nth-child(n+3),
+.table-body__8th-row td:nth-child(n+3),
+.table-body__5th-row td:nth-child(n+2),
+.table-body__7th-row td:nth-child(n+2),
+.table-body__9th-row td:nth-child(n+2){
+    text-align: right;
+    padding-right: 10px;
+}
+
+.table-body__1st-row th:last-child{
+    vertical-align: bottom;
+
+}
+
+.table-body__4th-row td:nth-child(2),
+.table-body__6th-row td:nth-child(1){
+    vertical-align: top;
+}
+
+.table-body__5th-row td:nth-child(n+2),
+.table-body__7th-row td:nth-child(n+2),
+.table-body__9th-row td:nth-child(n+2){
+    vertical-align: top;
+    padding-top: 5px;
+}
+
+
+.table-body__title{
+    padding: 10px 0px;
+}
+
+
+
+.table-body__5th-row td:first-child,
+.table-body__7th-row td:first-child,
+.table-body__9th-row td:first-child{
+    padding-top: 5px;
+    padding-right: 10px;
+    border-left: 0;
+    padding-bottom: 5px;
+    border-right: 2px solid black;
+}
+
+.table-body__4th-row td:nth-child(3),
+.table-body__6th-row td:nth-child(2),
+.table-body__8th-row td:nth-child(2){
+    border-left: 0;
+    border-right: 2px solid black;
+}
+
+
+
+.width-l{
+    width: 160px;
+}
+.width-m{
+    width: 120px;
+}
+.width-s{
+    width: 100px;  
+}
