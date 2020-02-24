@@ -16,7 +16,7 @@
 }
 
 
-.content{
+.wrapper{
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -30,13 +30,9 @@ body{
 ********HEADER********
 *********************/
 
-.header{
-    
-    height: 48px;
+.header{    
     width: inherit;
-    background-color:#191a1e;
-    align-items: left;
-    
+    background-color:#191a1e;   
 }
 
 .logo,
@@ -54,7 +50,6 @@ body{
 }
 
 .logo__image{
-    height: 32px;
     width: 32px;
     float: left;
     margin: 5px;
@@ -117,7 +112,6 @@ body{
 
 .sub-header-navigation{
     border-bottom: 1px solid #e4e4e4;
-    height: 48px;
     font-family:'nk147regular';
 }
 
@@ -184,50 +178,52 @@ body{
 .newsBlock{
     width: calc(100% / 4 * 3);    
     float: left;
-    margin-top: 5px;
 }
+
 .wideCard{
-    height: 380px;
-    position: relative;    
+    padding-top: 20px;
 }
 
 .wideCard__image{
-    width: 790px;
+    width: calc(100% - 15px);
     height: 380px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+
+.image3{
+    background-image: url(img/wideCard.jpg);
+}
+
+
 .wideCard__time{
-    align-items: center;
-    margin-top: 8px;
+    padding-top: 8px;
+    padding-left: 20px;
+    font-family:'nk147regular'; 
     font-size: 12px;
+    color:rgb(187, 187, 187);
     font-weight: 500;
-    line-height: 16px;
-    color: #ffffff;
-    position: absolute;
-    z-index: 20;
-    bottom: 10px;
-    left: 15px;
-    font-family:'nk147regular';  
+    line-height: 16px;  
+     
+}
+.wideCard__title{
+    padding-top: 205px;
+    padding-left: 20px;
+    
 }
 .wideCard__title >a{
     text-shadow: 0 1px 2px rgba(0,0,0,.4);
     color: #fff;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     font-style: normal;
     line-height: 40px;
-    margin: 12px 0 20px;
     word-wrap: break-word;
-    position: absolute;
-    z-index: 20;
-    bottom: 30px;
-    left: 15px;
     max-width: 760px;
     cursor: pointer;
-    text-decoration: none; 
+    text-decoration: none;
+
     
 }
 
@@ -249,20 +245,25 @@ body{
     width: calc(100%/2);
     float: left;
     cursor: pointer;
-}
-.NewsCard > figure{
-    margin: 0;
+    z-index: 10;
 }
 
 .NewsCard__image{
-    width: 385px;
+    width: calc(100% - 15px);
     height: 265px;
-
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.image1{
+    background-image: url(img/card2.jpg);
+}
+.image2{
+    background-image: url(img/card1.jpg);
 }
 
 .NewsCard__time,
 .lastNews__time{
-    align-items: center;
     margin-top: 8px;
     font-size: 12px;
     font-weight: 500;
@@ -278,7 +279,7 @@ body{
 
 .newsBar{
     width: calc(100% / 4);
-    height: 820px;
+    max-height: 920px;
     float: right;
     background-color: #f8f8f8;
     padding: 0 20px 20px;
@@ -338,10 +339,8 @@ body{
 *******FOOTER*********
 *********************/
 .footer{
-    height: 62px;
     width: inherit;
     background-color:#191a1e;
-    align-items: left;
     margin-top: 5px;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
@@ -349,7 +348,6 @@ body{
 
 }
 .footer__image{
-    height: 55px;
     width: 55px;
 }
 
