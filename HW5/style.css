@@ -229,10 +229,9 @@ body{
     color:#f71;
 }
 
-.wideCard__border-bottom{
-    width: 790px;
+hr.wideCard__border-bottom{
+    width: calc(100% - 15px);
     margin: 8px 0px;
-
 }
 
 /*********************
