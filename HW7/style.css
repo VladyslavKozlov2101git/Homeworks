@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5{
+    margin: 0;
+}
+
+body{
+    background-color: #3e3b4a;
+    font-family: 'Open Sans', sans-serif;
+}
+.wrapper{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+.header__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 60px 0 75px;
+}
+
+.header__logo span{
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+.header__logo{
+    font-size: 13px;
+    text-align: center;
+    color: #898691;
+}
+
+.header__burgermenu,
+.header__search{
+    display: flex;
+    text-decoration: none;
+    color: #898691;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+
+}
+
+.header__burgermenu{
+    padding-left: 32px;
+    background-image: url(img/menu-i.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.header__search{
+    padding-right: 32px;
+    background-image: url(img/search-i.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.content__bulb{
+    background-image: url(img/row1-a1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 512px;
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  
+    padding-top: 38px;
+    padding-left: 43px;
+    padding-bottom: 38px;
+
+}
+
+.content__rubric {
+    display: block;
+    font-size: 14px;
+    color: #ffc7b0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content__bulb-title a{
+    display: block;
+    text-decoration: none;
+    font-size: 72px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.056;
+}
+
+.content__bulb-description {
+    font-size: 36px;
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.content__readMore {
+    display: block;
+    width: 129px;
+    margin-top: auto;
+
+    text-decoration: none;
+    word-wrap: normal;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 9px 7px 11px 8px;
+
+    color: #fff;
+    line-height: 1.2;
+    border: 3px solid #ffe18f;
+    
+ 
+}
+
+.Read_more {
+    font-size: 20px;
+    font-family: "OpenSans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 171.87px;
+    top: 643px;
+    z-index: 66;
+  }
+  
+  .content__peak{
+    margin-top: 20px;
+    background-color: #73b7c4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/headphones.png);
+    background-repeat: no-repeat;
+    background-size: 379px 470px;
+    background-position: top right;
+    
+    height: 484px;
+    flex-basis: 622px;
+    display: flex;
+    flex-direction: column;     
+    
+    padding-top: 38px;
+    padding-left: 43px;
+    padding-bottom: 38px;
+}
+
+.content__peak-title a{
+    display: block;
+    text-decoration: none;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 1px;
+    line-height: 1.583;   
+
+}
+
+.content__peak-description{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.content__joinUs{    
+    margin-top: 20px;
+    background-color: rgb(235,123,97);
+    padding: 65px 44px 74px 51px;
+    height: 484px;
+    flex-basis: 378px;
+}
+  
+.content__joinUs-title{
+    font-size: 48px;
+    font-family: "Times New Roman";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;    
+}
+  
+.content__joinUs-description{
+    font-size: 24px;
+    font-family: "Times New Roman";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    font-weight: 400; 
+    text-align: center;
+    margin-bottom: 38px;  
+}
+
+.content__joinUs-safety{
+    margin-top: 28px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+.content__leica{
+    background-image: url(img/row3-a1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    flex-basis: 260px;
+    height: 420px;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+
+    padding-bottom: 38px;
+    align-items: center;
+}
+
+.content__leica-title a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 2.111;
+    margin-top: 120px;
+}
+
+.content__review{
+    display: block;
+    text-decoration: none;
+    color: #3d3c4a;
+    padding: 12px 10px;
+    background: rgb(225, 225, 142);
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: auto;
+    
+}
+
+.content__trobla{
+    background-image: url(img/row3-a2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 260px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 38px;
+
+    padding-bottom: 38px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.content__trobla-title a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 115px;
+    font-weight: bold;
+}
+
+.content__leicaDlux{
+    background-color: #1ab467;
+    background-image: url(img/leaicadelux.png);    
+    background-repeat: no-repeat;
+    background-size: 324px 263px;
+    background-position: bottom right;
+    flex-basis: 460px;
+    height: 420px;
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+     
+    
+    padding-top: 38px;
+    padding-left: 43px;
+    padding-bottom: 38px;
+}
+
+.content__leicaDlux-title a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 12px;
+
+}
+
+.content__leicaDlux-description{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 15px;
+        
+}
+
+.footer__elements{
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0 65px;
+    
+}
+
+.footer__copyright{    
+    color: rgb(137, 134, 145);
+    line-height: 1.2;
+    font-size: 14px;    
+}
+
+.footer__networks{
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+      
+}
+  
+
+/*********************************
+**********FORM PROPERTIES*********
+*********************************/
+
+.btn__submit{
+    background-color: #66689c;
+    border: none;
+    padding: 9px 95px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.field__email{
+    border: 3px solid #ffd9d1;
+    background-color: #eb7b61;
+    padding: 9px 51px 10px 50px;
+}
+
+::placeholder {
+    color: #ffd9d1;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+  }

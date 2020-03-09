@@ -6,29 +6,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="header__menu">
-                <div class="header__burgermenu">
-                    <a href="javascript:void(0)">Menu</a>
-                </div>
+                <a class="header__burgermenu" href="javascript:void(0)">Menu</a>
 
                 <div class="header__logo">
-                    <a class="header__logo-decor" href="javascript:void(0)"><span>DMT</span> <br> Design Meets Tech</a>
+                    <span>DMT</span> <br> Design Meets Tech
                 </div>
-    
-                <div class="header__search">
-                    <a href="javascript:void(0)">Search</a>
-                </div>
+                   
+                <a class="header__search" href="javascript:void(0)">Search</a>
+                
             </div>
         </div>
     </header>
     
     <main class="content">
-        <div class="wrapper">
-            <section class="content__row1">
+        <div class="wrapper">            
+            <section class="content">
+
                 <article class="content__bulb">
                     <!--some image on background-->
                     <a href="javascript:void(0)" class="content__rubric">Home</a>
@@ -36,9 +35,9 @@
                     <h2  class="content__bulb-description"> The first designer <br>  LED bulb, finished <br> in gold glass.</h4>
                     <a href="javascript:void(0)" class="content__readMore">Read more</a>                     
                 </article>
-            </section>
 
-            <section class="content__row2">
+
+
                 <article class="content__peak">
                     <!--some image on background-->
                     <a href="javascript:void(0)" class="content__rubric">Accessories</a>
@@ -50,13 +49,20 @@
                 <article class="content__joinUs">
                     <h3 class="content__joinUs-title">Good Things</h3>
                     <h4 class="content__joinUs-description">... <br> come to those who sign up <br> for our newsletter.</h4>
-                    <a href="javascript:void(0)" class="content__joinUs-mail">Your email</a>
-                    <a href="javascript:void(0)" class="content__joinUs-subcribe">Subcribe</a>
+
+                    <form action="mailto:vladislavkozlov2101@gmail.com" method="POST">
+                        <p>
+                            <label><input class="field__email" name='email' type="email" autofocus placeholder="Your email"></label>              
+                        </p>
+                        <p>
+                            <input class="btn__submit" type="submit" value="Subscribe">
+                        </p>
+                    </form>                       
                     <p class="content__joinUs-safety">We respect your privacy and we won’t <br> share your information.</p>                        
                 </article>
-            </section>
 
-            <section class="content__row3">
+
+
                 <article class="content__leica">
                     <!--some image on background-->
                     <a href="javascript:void(0)" class="content__rubric">Cameras</a>
@@ -78,6 +84,7 @@
                     <h4 class="content__leicaDlux-description"> Limited-edition DIesel <br> collaboration</h4>
                     <a href="javascript:void(0)" class="content__readMore">Read more</a>                     
                 </article>
+
             </section>
         </div>
     </main>
