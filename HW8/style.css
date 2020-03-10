@@ -1,24 +1,40 @@
+
 form{
-    background-image: url(img/bcgnd-img.jpg);
-    background-repeat: no-repeat;
-    max-width: 420px;
-    border: 3px solid black;
+    border: 1px solid black;
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgb(132, 230, 132);
+}
+
+ul{
+    padding: 10px;
+}
+
+.form li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
-fieldset{
-    border: none;
+.form li > label{
+    flex: 1 0 100px;
+    max-width: 220px;
 }
 
-.form-row  {
-    display: flex;
-    justify-content: flex-start;
-    padding: .5em;
-}
-
-.form-row > label {
-    padding: .5em 1em .5em 0;
-}
 input{
-    margin-left: 10px;
+    padding: 0;
+}
+
+li:nth-child(3)>input,
+li:nth-child(5)>input{
+    width: 169px;
+}
+
+.form-btn{
+    padding: 5px 10px;
+    margin-left: 255px;
+    margin-top: 10px;
+    border-radius: 5px 5px;    
 }
