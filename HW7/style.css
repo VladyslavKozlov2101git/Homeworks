@@ -42,6 +42,7 @@ body{
     font-weight: bold;
     font-size: 12px;
     align-items: center;
+    letter-spacing: 3.2px;
 
 }
 
@@ -90,6 +91,7 @@ body{
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
+    letter-spacing: 3.2px;
 }
 
 .content__bulb-title a{
@@ -112,14 +114,14 @@ body{
 
 .content__readMore {
     display: block;
-    width: 129px;
+    width: 126px;
     margin-top: auto;
 
     text-decoration: none;
     word-wrap: normal;
     font-size: 20px;
     font-weight: bold;
-    padding: 9px 7px 11px 8px;
+    padding: 5px 6px 7px 6px;
 
     color: #fff;
     line-height: 1.2;
@@ -246,7 +248,7 @@ body{
     display: block;
     text-decoration: none;
     color: #3d3c4a;
-    padding: 12px 10px;
+    padding: 10px 10px;
     background: rgb(225, 225, 142);
     font-weight: bold;
     font-size: 20px;
