@@ -444,7 +444,9 @@ body {
 ********************VOYAGE********************
 *********************************************/
 .voyage {
-  background-color: #e9e9e9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .voyage__inner {
@@ -459,6 +461,7 @@ body {
   max-width: 940px;
   width: 100%;
   padding: 60px 0 208px;
+  position: relative;
 }
 
 .voyage__inner-title {
@@ -494,5 +497,24 @@ body {
 .voyage__inner-link {
   margin: 35px 0 0 -6px;
   color: #fff;
+}
+
+.voyage__inner-phone {
+  position: absolute;
+  top: 61px;
+  right: 7px;
+  background-image: url(../images/phone.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 240px;
+  height: 480px;
+}
+
+.voyage__inner-phone iframe {
+  position: absolute;
+  width: 210px;
+  height: 344px;
+  top: 59px;
+  left: 17px;
 }
 /*# sourceMappingURL=style.css.map */
