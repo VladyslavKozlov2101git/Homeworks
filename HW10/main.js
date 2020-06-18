@@ -113,7 +113,7 @@ if ( 3 < j < 12 || 7 <= n < 15){
 
 //TASK 10 v.1
 
-let month = +prompt('Enter number from 1 to 12, please!', '');
+let month = prompt('Enter number from 1 to 12, please!', '');
 
 if (month <= 12 && month >= 1 ){
     switch ( month){
@@ -159,6 +159,24 @@ if (month == 1 || month == 2 || month == 12 ){
 
 
 
+    
+//TASK 10 v.3
+
+if (month==12 || month <3 && month >0 ){
+    console.log ('It is a winter!');
+} else if ( month >= 3 && month <=5){
+    console.log ('It is a spring');
+} else if (month >= 6 && month <=8 ){
+    console.log ('Is is a summer');
+} else if (month >= 9 && month <=11){
+    console.log ('Is is a fall');
+}
+
+
+
+
+
+
 
 
 // TASK 11 v.1
@@ -182,4 +200,3 @@ while (i<=100){
     }
     i++
 }
-//
