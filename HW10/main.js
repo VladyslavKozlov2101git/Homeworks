@@ -10,22 +10,15 @@ let hours =3,
 console.log(time + ' seconds in ' + hours + ' hours');
 
 
-//  TASK2
+//  TASK2                                     
 
-var num = 1;
-    num +=12; //     num = num + 12;
-    console.log (num);
+let num = 1;    
+    num +=12;
     num -=14;
-    console.log (num); // num = num - 14;
     num *=5;
-    console.log (num); // num = num * 5;
     num /=7;
-    console.log (num); // num = num / 7;
-    num +=1;
-    console.log (num); // num = num + 1;
-    num -=1;
-    console.log (num); // num = num - 1;
-    //alert(num);
+    num ++;
+    num --;
 
 
 //  TASK 3
@@ -66,18 +59,6 @@ if (s==='1'){
 }
 
 
-if (s===1){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
-
-
-if (s===3){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
 
 
 //  TASK 7
@@ -92,21 +73,10 @@ if (item != true){
     console.log ('Неверно');
 }
 
-if (item == true){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
 
-if (item == false){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
+item != true ? console.log ('Верно') : console.log ('Неверно'); 
 
-item == true ? console.log ('Верно') : console.log ('Неверно');
 
-item == false ? console.log ('Верно') : console.log ('Неверно');
 
 
 
@@ -115,32 +85,13 @@ console.log ('TASK 8');
 
 
 let k = 4;
-if (k>0 && k<4){
+if (0< k <4){                                          
     console.log ('Верно');
 }else{
     console.log ('Неверно');
 }
 
-let k1 = 0;
-if (k1>0 && k1<4){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
 
-let k2 = -3;
-if (k2>0 && k2<4){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
-
-let k3 = 2;
-if (k3>0 && k3<4){
-    console.log ('Верно');
-}else{
-    console.log ('Неверно');
-}
 
 
 
@@ -150,7 +101,7 @@ console.log ('TASK 9');
 
 let j=1,
     n=16;
-if ((j>3 && j <12 )||(n>=7 && n<15)){
+if ( 3 < j < 12 || 7 <= n < 15){ 
     console.log ('Верно');
 }else{
     console.log ('Неверно');
@@ -162,7 +113,7 @@ if ((j>3 && j <12 )||(n>=7 && n<15)){
 
 //TASK 10 v.1
 
-let month = +prompt('Enter number from 1 to 12, please!');
+let month = +prompt('Enter number from 1 to 12, please!', '');
 
 if (month <= 12 && month >= 1 ){
     switch ( month){
