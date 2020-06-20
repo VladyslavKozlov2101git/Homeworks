@@ -1,3 +1,9 @@
+$('.slider__items').slick({
+    dots: true,
+    arrows: false
+});
+
+
 $(function(){
     
     // var mixer = mixitup('.works__items');
@@ -9,34 +15,75 @@ $(function(){
         }
     });
     
+    
 
 });
 
-var video = document.querySelector('.video');
-var circle = document.querySelector('.circle');
-var juice = document.querySelector('.oranje__juice');
-var btn = document.getElementById('play-pause');
 
 
-function togglePlayPause(){
-    if (video.paused){
-        btn.className = 'pause';
-        video.play ();
-    }
-    else{
-        btn.className = "play";
-        video.pause ();
-    }
+document.querySelector('#play').onclick = play;
+document.querySelector('#pause').onclick = pause;
+
+
+let video,
+    display;
+
+
+video = document.querySelector ('#video-player');
+progress = document.querySelector ('#progress');
+
+video.ontimeupdate = progressUpdate;
+
+progress.onclick = videoRewind;
+
+
+function play(){
+    video.play();
 }
 
-btn.onclick = function () {
-    togglePlayPause();
-};
+function pause(){
+    video.pause();
+}
 
-video.addEventListener('timeupdate', function(){
-    circlePos = video.currentTime / video.duration;
-    circle.style.left = circlePos * 100 +'%';
-    if (video.ended){
-        btn.className = 'play';
-    }
-})
+
+
+function progressUpdate (){
+    console.log (video.duration);
+    console.log (video.currentTime);
+    let d = video.duration;
+    let c = video.currentTime;
+    progress.value = (100 * c) / d;
+
+}
+
+function videoRewind (){
+    let w = this.offsetWidth;
+    let o = event.offsetX;
+    console.log(w);
+    console.log(o);
+    this.value = 100 *o/w;
+    video.pause ();
+    video.currentTime = video.duration * (o/w);
+    video.play();
+}
+
+
+var rangeSlider = function(){
+    var slider = $('.range-slider'),
+        range = $('.range-slider__range'),
+        value = $('.range-slider__value');
+      
+    slider.each(function(){
+  
+      value.each(function(){
+        var value = $(this).prev().attr('value');
+        $(this).html(value);
+      });
+  
+      range.on('input', function(){
+        $(this).next(value).html(this.value);
+      });
+    });
+  };
+  
+  rangeSlider();

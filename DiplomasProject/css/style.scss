@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   
   /*********************************************
   ****************HEADER*********************
-  *********************************************/
+  **********************************************/
   .header__inner {
     padding-left: 215px;
     padding-top: 330px;
@@ -760,54 +760,25 @@ h1, h2, h3, h4, h5, h6, html, body {
 
 
 
-  .c__video {
+  .video__inner {
     width: 100%;
     max-width: 1600px;
-    height: 685px;
+    height: 785px; //685px
     position: relative;
     overflow: hidden;
-  }
-  
-  .c__video video {
-    width: 100%;
-  }
-  video{
-    height: 680px;
-  }
+    video{
+      width: 100%;
+      height: 680px; 
 
-  video[poster]{
-    object-fit: cover;
-    width:100%;
     }
-  
-  .controls {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: 20%;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 95.56%;
-    background: rgba(0, 0, 0, 0.7);
-    
-    transition: all 0.2s;
+    video[poster]{
+      object-fit: cover;
+      width:100%;
+    }
   }
   
-  .buttons {
-    padding: 10px;
-  }
-  
-  .buttons button {
-    background: none;
-    border: 0;
-    outline: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-  }
+ 
+
   
   .buttons button::before {
     content: '\ea15';
@@ -841,26 +812,308 @@ h1, h2, h3, h4, h5, h6, html, body {
     -webkit-font-smppthing: antialiased;
   }
   
-  .orange-bar {
-    height: 2px;
-    top: 0;
-    left: 0;
+  
+
+  
+  // Range Slider
+  $range-width: 100% !default;
+  
+  $range-handle-color: $shade-10 !default;
+  $range-handle-color-hover: $teal !default;
+  $range-handle-size: 8px !default;
+  
+  $range-track-color: $shade-1 !default;
+  $range-track-height: 2px !default;
+  
+  $range-label-color: $shade-10 !default;
+  $range-label-width: 60px !default;
+  
+  .range-slider {
+    width: $range-width;
+  }
+  
+  .range-slider__range {
+    width: calc(100% - (#{$range-label-width + 13px}));
+    height: $range-track-height;
+    border-radius: 5px;
+    background: $range-track-color;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    padding: 15px;
+  }
+
+
+  
+  
+  // Range Label
+  .range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: $range-label-width;
+    color: $shade-0;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 3px;
+    background: $range-label-color;
+    padding: 5px 10px;
+    margin-left: 8px;
+  
+    &:after {
+      position: absolute;
+      top: 8px;
+      left: -7px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-right: 7px solid $range-label-color;
+      border-bottom: 7px solid transparent;
+      content: '';
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*********************************************
+  ******************OUR SKILLS******************
+  *********************************************/
+
+  .skills__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 55px;
+    
+    &-title{
+      margin: -4px 0 0 19px;
+      &::after{
+        left: 69px;
+      }
+    }
+  }
+
+  
+  .skills__items{
+    display: flex;
+    flex-direction: row;
+    max-width: 812px;
     width: 100%;
-    background-color: #e8e8e8;
+    justify-content: space-between;
+  }
+
+
+
+
+.skills__box{
+  max-width: 420px;
+  width: 100%;
+  padding: 25px 0 0 30px;
+  &-title{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &-subtitle{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 24px;
+    color: rgb(102,102,102);
+    font-style: italic;    
+    -webkit-transform: scale(1.02, 1);
+            transform: scale(1.02, 1);
+    letter-spacing: 0.05em;
+    margin: 4px 0 0 2px;
+  }
+  &-txt{
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    color: #444444;
+    line-height: 22px;
+    text-align: left;
+    -webkit-transform: scale(1.02, 1);
+            transform: scale(1.02, 1);
+    letter-spacing: 0.05em;
+    margin: 12px 0 0 0;
+    padding-left: 5px;
+  }
+
+}
+
+.skills__histogram{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 225px;
+  height: 310px;
+  position: relative;
+  
+  margin: -16px 15px 0px 0px;
+  transform: rotate(-90deg);
+
+  &-column{
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    font-style: italic;
+    font-family: 'PT Sans', sans-serif;
+    
+    color: #444444;
+    background-color: #292929;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 9px;
+    color: #fff;
+    height: 21px;
+    &+.skills__histogram-column{
+      margin-top: 15px;
+    }
+    
+    
+    
     
   }
-  
-  
-  button.circle{
-      position: absolute;
-      top: -3px;
-      left: 0;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      padding: 0;
-      border: none;
-      background-color: #fff;
+}
+
+/*********************************************
+******************PARTNERS********************
+*********************************************/
+
+.partners__items{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 133px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+.partners__item{ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(100% / 6);
+  &+.partners__item{
+    border-left: 1px solid #e1e1e1;
   }
+  img{
+    object-fit: contain;
+  }
+}
+
+
+/********************************************
+******************SLIDER*********************
+*********************************************/
+
+
+
+.slider__item{
+  height: 555px;
+  width: 100%;
   
- 
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &-photo{
+    object-fit: cover;
+    height: 100%;
+  }
+
+
+  &-box{
+    width: 540px;
+    position: absolute;
+    top: 216px;
+    right: 289px;
+    
+  }
+  &-txt{
+    max-width: 535px;
+    padding-left: 58px;
+    
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    color: #444444;
+    line-height: 24px;
+    text-align: left;
+    transform: scale(1.02, 1);
+    letter-spacing: 0.05em;
+    margin-left: 7px;
+    margin-top: 14px;
+    &::before{
+      content: "";
+      position: absolute;
+      top: 1px;
+      left: 1px;
+      background-image: url(../images/icons/lapki.png);
+      width: 29px;
+      height: 26px;
+    }
+  }
+
+  &-author{
+    font-size: 18px;
+    font-family: 'Lobster', cursive;
+    color: rgb(0, 0, 0);
+    line-height: 24px;
+    text-align: right;
+    transform: scale(1.02, 1);
+    letter-spacing: 0.05em;
+    padding: 10px 14px 0 0px;
+    span{
+      font-size: 14px;
+      font-family: 'PT Sans', sans-serif;
+      color: rgb(68, 68, 68);
+      font-style: italic;
+      line-height: 24px;
+      letter-spacing: 0.025em;
+      
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.slick-dots {
+  bottom: 23px;
+  left: 9px;
+}
+
+.slick-dots li button:before{
+  font-size: 24px;
+  color: #cbcbcb;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  font-size: 34px;
+}

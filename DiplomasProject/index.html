@@ -6,8 +6,11 @@
     <title>MarketPlace</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,7 +49,7 @@
                             </div>
                             
                             <p class="about__item-txt">
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
                             </p>
                         </div>
 
@@ -405,26 +408,158 @@
 
         <section class="video-section">
             <div class="container">
-                <div class="c__video" >
-                    <video class="video"  src="images/video.mp4" 
+                <div class="video__inner" >
+                    <video id="video-player"  src="images/video.mp4" 
                     poster="images/poster.jpg"></video>
-                    <div class="controls">
-                        <div class="orange-bar">
-                            <button class="circle"></button>                            
-                        </div>
-                        
-                    </div>
-                    <div class="buttons">
-                        <button  id="play-pause"></button>
-                    </div>
                     
+                    <input class="range-slider__range" id="progress" type="range" max='100' value="0" style="width: 80%; margin: 0 auto;">
+                
+                    <button id='play'>Play</button>
+                    <button id='pause'>Pause</button>
+
+
                 </div>
             </div>
         </section>
 
-    </main>
     
 
+<!-- 
+        <section class="skills">
+            <div class="container">
+                <div class="skills__inner">
+                    <div class="skills__inner-title section__title" >
+                        our skills
+                    </div>
+
+                    <div class="skills__items">
+                        <div class="skills__box">
+                            <div class="skills__box-title">
+                                perfect layout & efficient coding
+                            </div>
+                            <div class="skills__box-subtitle">
+                                We produce top class code
+                            </div>
+                            <p class="skills__box-txt">
+                                Hi, my name is Sergey Nefortunov, I'm 25 and a web & UI designer based is Kiev, Ukraine. I started designing long ago with the basis pencil and paper drawings, sketching, painting and product design. Now I work with such software as Adobe Photoshop and Adobe Illustrator. Also I work with the content Management Systems such as: Wordpress and Magento
+                            </p>
+                        </div>
+                        <div class="skills__histogram">
+                            <div class="skills__histogram-column" style="width: 100%;">
+                                Adobe Photoshop
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 85%;">
+                                Adobe Illustrator
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 76%;">
+                                HTML 5
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 94%;">
+                                CSS
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 100%;">
+                                Java Script
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 94%;">
+                                Piton
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 100%;">
+                                Responsive Design
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 84%;">
+                                Adobe Illustrator
+                            </div>
+
+                            <div class="skills__histogram-column" style="width: 76%;">
+                                HTML 5
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="partners__inner">
+                    <div class="partners__items">
+                        <div class="partners__item">
+                            <img src="images/partenr1.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partenr2.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partenr3.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partenr4.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partenr5.png" alt="partner">
+                        </div>
+                        <div class="partners__item">
+                            <img src="images/partenr6.png" alt="partner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="slider__items">
+                        <div class="slider__item" style="background-image: url(images/sliderback.jpg);">
+                            <img class="slider__item-photo" src="images/podruga.png" alt="photo">
+                            <div class="slider__item-box">
+                                <p class="slider__item-txt">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                                </p>
+                                <div class="slider__item-author">
+                                    Joanna Doe <br>
+                                    <span>Senior Designer, Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" style="background-image: url(images/sliderback.jpg);">
+                            <img class="slider__item-photo" src="images/podruga.png" alt="photo">
+                            <div class="slider__item-box">
+                                <p class="slider__item-txt">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error magnam id qui eaque amet nobis praesentium quam numquam harum sed veritatis optio labore repellendus, molestias delectus temporibus nemo animi. 
+                                </p>
+                                <div class="slider__item-author">
+                                    Joanna Doe <br>
+                                    <span>Senior Designer, Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" style="background-image: url(images/sliderback.jpg);">
+                            <img class="slider__item-photo" src="images/podruga.png" alt="photo">
+                            <div class="slider__item-box">
+                                <p class="slider__item-txt">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.   
+                                </p>
+                                <div class="slider__item-author">
+                                    Joanna Doe <br>
+                                    <span>Senior Designer, Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
 
 
 
@@ -433,9 +568,18 @@
 
 
 
+
+
+
+
+
+    </main>
+
+
+    <script src="js/slick.js"></script>
     <script src="js/mixitup.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
