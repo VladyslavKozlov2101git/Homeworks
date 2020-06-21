@@ -787,8 +787,7 @@ h1, h2, h3, h4, h5, h6, html, body {
 
   .video__inner {
     width: 100%;
-    max-width: 1600px;
-    height: 785px; //685px
+    height: 685px; //685px
     position: relative;
     overflow: hidden;
     video{
@@ -924,11 +923,13 @@ h1, h2, h3, h4, h5, h6, html, body {
     flex-direction: column;
     align-items: center;
     padding-bottom: 55px;
+   
     
     &-title{
-      margin: -4px 0 0 19px;
+      padding: 90px 0 78px 1px;
       &::after{
-        left: 69px;
+            left: 71px;
+            top: 169px;
       }
     }
   }
@@ -948,7 +949,7 @@ h1, h2, h3, h4, h5, h6, html, body {
 .skills__box{
   max-width: 420px;
   width: 100%;
-  padding: 25px 0 0 30px;
+  padding: 25px 0 0 23px;
   &-title{
     font-size: 18px;
     letter-spacing: 1px;
@@ -973,7 +974,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     color: #444444;
-    line-height: 22px;
+    line-height: 23px;
     text-align: left;
     -webkit-transform: scale(1.02, 1);
             transform: scale(1.02, 1);
@@ -993,7 +994,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   height: 310px;
   position: relative;
   
-  margin: -16px 15px 0px 0px;
+  margin: -16px 24px 0px 0px;
   transform: rotate(-90deg);
 
   &-column{
@@ -1072,7 +1073,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     width: 540px;
     position: absolute;
     top: 216px;
-    right: 289px;
+    right: 307px;
     
   }
   &-txt{
@@ -1128,8 +1129,8 @@ h1, h2, h3, h4, h5, h6, html, body {
 
 
 .slick-dots {
-  bottom: 23px;
-  left: 9px;
+  bottom: 24px;
+  left: 52px;
   width: 1500px;
 }
 
@@ -1154,10 +1155,17 @@ h1, h2, h3, h4, h5, h6, html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  &-txt{
-    
+  padding-bottom: 97px;
+  &-title{
+    padding: 66px 0 84px 0;
+    &::after{
+      top: 144px;
+    }
   }
+  
 }
+
+
 .subtitle-txt{
   max-width: 705px;
   text-align: center;
@@ -1167,6 +1175,9 @@ h1, h2, h3, h4, h5, h6, html, body {
   font-style: italic;
   line-height: 22px;
   letter-spacing: 0.05em;
+  margin: 14px 0px 40px 0px;
+  padding: 0;
+  transform: scale(1.02, 1);
 }
 .news__items{
   display: flex;
@@ -1179,13 +1190,14 @@ h1, h2, h3, h4, h5, h6, html, body {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 45px;
   &-image{
     display: flex;
     flex-basis: 470px;
     max-width: 470px;
     object-fit: cover;    
     height: 280px;
+    margin: 5px 0 0 0;
 
   }
 
@@ -1203,15 +1215,18 @@ h1, h2, h3, h4, h5, h6, html, body {
     letter-spacing: 0.05em;
     text-align: left;
     transform: scale(1.02, 1);
+    margin: 0px 0 0 2px;
   }
   &-txt{
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     color: rgb(68, 68, 68);
-    line-height: 22px;
+    line-height: 23px;
     text-align: left;
     transform: scale(1.02, 1);
     letter-spacing: 0.05em;
+    margin: 18px 0 11px 7px;
+    padding: 0px 9px 0 0;
   }
   &-links{
     font-size: 14px;
@@ -1233,6 +1248,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     color: rgb(144, 144, 144);
     font-style: italic;
     line-height: 24px;
+    margin: 4px 0 0 0;
     letter-spacing: 0.025em;
     text-align: left;
     padding-bottom: 20px;
@@ -1254,7 +1270,9 @@ h1, h2, h3, h4, h5, h6, html, body {
 *******************FORM**********************
 *********************************************/
 
-
+.form{
+  background-color: #f9f9f9;
+}
 
 .form__inner{
   display: flex;
@@ -1262,6 +1280,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   align-items: center;
   
   &-title{
+    padding-bottom: 47px;
     &::after{
       display: none;
     }
@@ -1280,7 +1299,7 @@ h1, h2, h3, h4, h5, h6, html, body {
       width: 100%;
       outline: none;
       padding-bottom: 3px;
-      
+      background-color: #f9f9f9;
       border-bottom: 1px solid #d1d1d1;
 
       &::placeholder{
