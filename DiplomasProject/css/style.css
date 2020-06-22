@@ -807,36 +807,76 @@ body {
   width: 100%;
 }
 
-.buttons button::before {
-  content: '\ea15';
-  font-family: 'icomoon' !important;
-  width: 90px;
-  height: 90px;
-  display: inline-block;
-  font-size: 90px;
-  color: #fff;
+/*********************************************
+  ******************VIDEO RANGE******************
+  *********************************************/
+.range-slider__range {
+  position: absolute;
+  bottom: 126px;
+  left: 32px;
 }
 
-.buttons button.play::before {
-  content: '\ea15';
-  font-family: 'icomoon' !important;
-  width: 90px;
-  height: 90px;
-  display: inline-block;
-  font-size: 90px;
-  color: #fff;
-  -webkit-font-smppthing: antialiased;
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
 }
 
-.buttons button.pause::before {
-  content: '\ea16';
-  font-family: 'icomoon' !important;
-  width: 90px;
-  height: 90px;
-  display: inline-block;
-  font-size: 90px;
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #dedede;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #e8e8e8;
+  border-radius: 50%;
+}
+
+button#play,
+button#pause {
+  position: absolute;
+  cursor: pointer;
+  top: 297px;
+  left: 47%;
+  background-color: transparent;
+  border: none;
   color: #fff;
-  -webkit-font-smppthing: antialiased;
+  outline: none;
+}
+
+button#play::before,
+button#pause::before {
+  font-size: 86px;
+}
+
+.icon-play2.active,
+.icon-pause.active {
+  display: block;
+}
+
+.icon-play2.disable,
+.icon-pause.disable {
+  display: none;
 }
 
 /*********************************************
@@ -1291,19 +1331,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 97px;
   max-width: 370px;
   width: 100%;
 }
 
 .form__inner form input {
-  padding-left: 5px;
+  padding: 1px 0 3px 3px;
   border: none;
   width: 100%;
   outline: none;
-  padding-bottom: 3px;
   background-color: #f9f9f9;
   border-bottom: 1px solid #d1d1d1;
+  margin: 0 0 17px 0;
 }
 
 .form__inner form input::-webkit-input-placeholder {
@@ -1354,6 +1394,7 @@ body {
   background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
+  margin: 8px 0px 0 0;
 }
 
 /********************************************
@@ -1370,6 +1411,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 91px;
+}
+
+.contacts__inner-title::after {
+  top: 175px;
+  left: 71px;
+}
+
+.contacts__inner-txt {
+  margin: 27px 0px 40px 0px;
 }
 
 .contacts__items {
@@ -1383,7 +1434,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 830px;
+  max-width: 803px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -1403,9 +1455,14 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.05em;
   -webkit-transform: scale(1.02, 1);
           transform: scale(1.02, 1);
   text-decoration: none;
+}
+
+.contacts__item:nth-child(2) {
+  padding-left: 17px;
 }
 
 .contacts__item img {
@@ -1413,6 +1470,7 @@ body {
   height: 22px;
   -o-object-fit: contain;
      object-fit: contain;
+  margin: 0 0 12px 0;
 }
 
 /*********************************************
@@ -1420,7 +1478,7 @@ body {
   *********************************************/
 footer {
   background-color: #292929;
-  height: 278px;
+  height: 345px;
 }
 
 .footer__inner {
@@ -1434,6 +1492,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 76px 0 0 0;
 }
 
 .footer__inner-logo {
@@ -1453,9 +1512,11 @@ footer {
   text-transform: uppercase;
   line-height: 2.5;
   text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .footer__inner-links {
+  padding: 10px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1486,6 +1547,10 @@ footer {
   text-align: center;
 }
 
+.footer__inner-links li a::before {
+  font-size: 20px;
+}
+
 .footer__inner-copyright {
   font-family: 'PT Sans', sans-serif;
   text-align: center;
@@ -1495,5 +1560,6 @@ footer {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.025em;
+  margin: 24px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */

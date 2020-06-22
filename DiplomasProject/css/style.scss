@@ -804,100 +804,84 @@ h1, h2, h3, h4, h5, h6, html, body {
  
 
   
-  .buttons button::before {
-    content: '\ea15';
-    font-family: 'icomoon' !important;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    font-size: 90px;
-    color: #fff;
+  
+
+  
+
+  /*********************************************
+  ******************VIDEO RANGE******************
+  *********************************************/
+  
+
+  
+  .range-slider__range {
+    position: absolute;
+    bottom: 126px;
+    left: 32px;
+    
+  }
+  input[type=range] {
+    -webkit-appearance: none; 
+    width: 100%;
+  }
+   
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: -3px;
+  }
+   
+  input[type=range]:focus {
+    outline: none;   }
+   
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
   }
   
-  .buttons button.play::before {
-    content: '\ea15';
-    font-family: 'icomoon' !important;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    font-size: 90px;
-    color: #fff;
-    -webkit-font-smppthing: antialiased;
+
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: #e8e8e8;
+  border-radius: 50%;
+  
+}
+
+button#play,
+button#pause{
+  position: absolute;
+  cursor: pointer;
+  top: 297px;
+  left: 47%;
+  background-color: transparent;
+  border: none;
+  color:#fff ;
+  outline: none;
+  &::before{
+    font-size: 86px;
   }
-  
-  .buttons button.pause::before {
-    content: '\ea16';
-    font-family: 'icomoon' !important;
-    width: 90px;
-    height: 90px;
-    display: inline-block;
-    font-size: 90px;
-    color: #fff;
-    -webkit-font-smppthing: antialiased;
+}
+
+.icon-play2,
+.icon-pause{
+  &.active{
+    display: block;
   }
-  
-  
-
-  
-  // // Range Slider
-  // $range-width: 100% !default;
-  
-  // $range-handle-color: $shade-10 !default;
-  // $range-handle-color-hover: $teal !default;
-  // $range-handle-size: 8px !default;
-  
-  // $range-track-color: $shade-1 !default;
-  // $range-track-height: 2px !default;
-  
-  // $range-label-color: $shade-10 !default;
-  // $range-label-width: 60px !default;
-  
-  // .range-slider {
-  //   width: $range-width;
-  // }
-  
-  // .range-slider__range {
-  //   width: calc(100% - (#{$range-label-width + 13px}));
-  //   height: $range-track-height;
-  //   border-radius: 5px;
-  //   background: $range-track-color;
-  //   outline: none;
-  //   padding: 0;
-  //   margin: 0;
-  //   padding: 15px;
-  // }
-
-
-  
-  
-  // // Range Label
-  // .range-slider__value {
-  //   display: inline-block;
-  //   position: relative;
-  //   width: $range-label-width;
-  //   color: $shade-0;
-  //   line-height: 20px;
-  //   text-align: center;
-  //   border-radius: 3px;
-  //   background: $range-label-color;
-  //   padding: 5px 10px;
-  //   margin-left: 8px;
-  
-  //   &:after {
-  //     position: absolute;
-  //     top: 8px;
-  //     left: -7px;
-  //     width: 0;
-  //     height: 0;
-  //     border-top: 7px solid transparent;
-  //     border-right: 7px solid $range-label-color;
-  //     border-bottom: 7px solid transparent;
-  //     content: '';
-  //   }
-  // }
-  
-
-
+  &.disable{
+    display: none;
+  }
+}
 
 
 
@@ -1290,17 +1274,17 @@ h1, h2, h3, h4, h5, h6, html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 97px;
     max-width: 370px;
     width: 100%;
     input{
-      padding-left: 5px;
+      padding: 1px 0 3px 3px;
       border: none;
       width: 100%;
       outline: none;
-      padding-bottom: 3px;
       background-color: #f9f9f9;
       border-bottom: 1px solid #d1d1d1;
+      margin: 0 0 17px 0;
 
       &::placeholder{
         font-size: 18px;
@@ -1323,6 +1307,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     background-color: transparent;
     text-decoration: underline;
     cursor: pointer;
+    margin: 8px 0px 0 0;
     
   }
 }
@@ -1336,13 +1321,26 @@ h1, h2, h3, h4, h5, h6, html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 91px;
+  &-title{
+    &::after{
+      top: 175px;
+      left: 71px;
+    }
+  }
+  
+  
+  &-txt{
+    margin: 27px 0px 40px 0px;
+  }
 }
 
 .contacts__items{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 830px;
+  max-width: 803px;
+  padding-top: 10px;
   width: 100%;
 }
 .contacts__item{
@@ -1354,12 +1352,17 @@ h1, h2, h3, h4, h5, h6, html, body {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.05em;
   transform: scale(1.02, 1);
   text-decoration: none;
+  &:nth-child(2){
+    padding-left: 17px;
+  }
   img{
     width: 24px;
     height: 22px;
     object-fit: contain;
+    margin: 0 0 12px 0;
   }
   
 }
@@ -1369,7 +1372,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   *********************************************/
   footer{
     background-color: #292929;
-    height: 278px;
+    height: 345px;
   }
 
   
@@ -1378,6 +1381,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 76px 0 0 0;
     &-logo{
       display: flex;
       flex-direction: column;
@@ -1388,8 +1392,10 @@ h1, h2, h3, h4, h5, h6, html, body {
       text-transform: uppercase;
       line-height: 2.5;
       text-align: center;
+      letter-spacing: 0.05em;
     }
     &-links{
+      padding: 10px 0 0;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -1407,6 +1413,9 @@ h1, h2, h3, h4, h5, h6, html, body {
           border-radius: 50%;
           line-height: 30px;
           text-align: center;
+          &::before{
+            font-size: 20px;
+          }
         }
       }
     }
@@ -1420,6 +1429,7 @@ h1, h2, h3, h4, h5, h6, html, body {
       line-height: 24px;
       text-align: center;
       letter-spacing: 0.025em;
+      margin: 24px 0 0 0;
     }
   }
 

@@ -6,13 +6,28 @@ $('.slider__items').slick({
 
 $(function(){
     
-    // var mixer = mixitup('.works__items');
+    
 
     var mixer = mixitup('.works__items', {
         animation: {
             duration: 500,
             effects: 'fade scale(0.5)'
         }
+    });
+
+    $('#play').on('click', function(){        
+        $('.icon-pause').addClass('active'),        
+        $('.icon-play2').removeClass('active'),
+        $('.icon-pause').removeClass('disable'),
+        $('.icon-play2').addClass('disable')
+
+    });
+    $('#pause').on('click', function(){
+        $('.icon-play2').addClass('active'),        
+        $('.icon-pause').removeClass('active'),
+        $('.icon-play2').removeClass('disable'),
+        $('.icon-pause').addClass('disable')
+
     });
     
     
