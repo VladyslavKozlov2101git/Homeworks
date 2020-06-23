@@ -119,6 +119,10 @@ h1, h2, h3, h4, h5, h6, html, body {
     color: black;
     font-weight: 700;
   }
+
+  /*********************************************
+  ******************ABOUT***********************
+  **********************************************/
   
   .about__inner {
     display: -webkit-box;
@@ -135,6 +139,9 @@ h1, h2, h3, h4, h5, h6, html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    >a{
+      text-decoration: none;
+    }
   }
   
   
@@ -243,7 +250,8 @@ h1, h2, h3, h4, h5, h6, html, body {
     overflow: hidden;
     margin: 16px 0px 0 -9px;
   }
-  
+
+
   /*********************************************
   ****************OUR WORKS*********************
   *********************************************/

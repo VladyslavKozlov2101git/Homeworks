@@ -1,3 +1,5 @@
+
+
 $('.slider__items').slick({
     dots: true,
     arrows: false
@@ -101,4 +103,6 @@ var rangeSlider = function(){
     });
   };
   
-  rangeSlider();
+rangeSlider();
+
+
