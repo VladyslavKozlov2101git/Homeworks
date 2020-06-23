@@ -50,8 +50,8 @@ body.overflow {
 .burger span, .burger span::before, .burger span::after {
   display: block;
   width: 30px;
-  height: 3px;
-  background-color: #2a2a2a;
+  height: 4px;
+  background-color: #fff;
   outline: 1px solid transparent;
   -webkit-transition-property: background-color, -webkit-transform;
   -moz-transition-property: background-color, -moz-transform;
