@@ -83,7 +83,7 @@ body {
 .header__inner {
   padding-left: 215px;
   padding-top: 330px;
-  padding-bottom: 345px;
+  padding-bottom: 358px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -429,7 +429,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-bottom: 21px;
+  padding-bottom: 32px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -533,7 +533,7 @@ body {
   margin: 0 auto;
   max-width: 940px;
   width: 100%;
-  padding: 60px 0 216px;
+  padding: 60px 0 208px;
   position: relative;
 }
 
@@ -574,7 +574,7 @@ body {
 
 .voyage__inner-phone {
   position: absolute;
-  top: 71px;
+  top: 61px;
   right: 15px;
   background-image: url(../images/phone.png);
   background-size: cover;
@@ -702,7 +702,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 50px 0 83px;
+  padding: 50px 0 99px;
 }
 
 .members__inner-txt {
@@ -716,7 +716,7 @@ body {
   transform: scale(1.02, 1);
   letter-spacing: 0.05em;
   max-width: 370px;
-  padding: 7px 0px 8px 2px;
+  padding: 20px 0px 8px 2px;
 }
 
 .members__inner-title {
@@ -741,7 +741,7 @@ body {
   justify-content: space-between;
   max-width: 1170px;
   width: 100%;
-  margin: 21px 0 0 3px;
+  margin: 34px 0 0 3px;
 }
 
 .members__item {
@@ -819,7 +819,7 @@ body {
   *********************************************/
 .range-slider__range {
   position: absolute;
-  bottom: 126px;
+  bottom: 28px;
   left: 32px;
 }
 
@@ -952,7 +952,7 @@ button#pause::before {
   -webkit-transform: scale(1.02, 1);
   transform: scale(1.02, 1);
   letter-spacing: 0.05em;
-  margin: 4px 0 0 2px;
+  margin: 2px 0 0 2px;
 }
 
 .skills__box-txt {
@@ -1101,6 +1101,7 @@ button#pause::before {
   top: 1px;
   left: 1px;
   background-image: url(../images/icons/lapki.png);
+  background-repeat: no-repeat;
   width: 29px;
   height: 26px;
 }
@@ -1128,8 +1129,8 @@ button#pause::before {
 
 .slick-dots {
   bottom: 24px;
-  left: 52px;
-  width: 1500px;
+  left: 701px;
+  max-width: 200px;
 }
 
 .slick-dots li button:before {
@@ -1527,7 +1528,7 @@ footer {
 }
 
 .footer__inner-links {
-  padding: 10px 0 0;
+  margin: 27px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1571,6 +1572,6 @@ footer {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.025em;
-  margin: 24px 0 0 0;
+  margin: 41px 0 0 0;
 }
 /*# sourceMappingURL=style.css.map */

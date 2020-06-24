@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   .header__inner {
     padding-left: 215px;
     padding-top: 330px;
-    padding-bottom: 345px;
+    padding-bottom: 358px;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 21px;
+    padding-bottom: 32px;
     align-items: center;
   }
   
@@ -522,7 +522,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     margin: 0 auto;
     max-width: 940px;
     width: 100%;
-    padding: 60px 0 216px;
+    padding: 60px 0 208px;
     position: relative;
   }
   
@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   
   .voyage__inner-phone {
     position: absolute;
-    top: 71px;
+    top: 61px;
     right: 15px;
     background-image: url(../images/phone.png);
     background-size: cover;
@@ -691,7 +691,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 50px 0 83px;
+    padding: 50px 0 99px;
   }
   
   .members__inner-txt {
@@ -705,7 +705,7 @@ h1, h2, h3, h4, h5, h6, html, body {
             transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     max-width: 370px;
-    padding: 7px 0px 8px 2px;
+    padding: 20px 0px 8px 2px;
   }
   
   .members__inner-title {
@@ -729,7 +729,7 @@ h1, h2, h3, h4, h5, h6, html, body {
             justify-content: space-between;
     max-width: 1170px;
     width: 100%;
-    margin: 21px 0 0 3px;
+    margin: 34px 0 0 3px;
   }
   
   .members__item {
@@ -824,7 +824,7 @@ h1, h2, h3, h4, h5, h6, html, body {
   
   .range-slider__range {
     position: absolute;
-    bottom: 126px;
+    bottom: 28px;
     left: 32px;
     
   }
@@ -960,7 +960,7 @@ button#pause{
     -webkit-transform: scale(1.02, 1);
             transform: scale(1.02, 1);
     letter-spacing: 0.05em;
-    margin: 4px 0 0 2px;
+    margin: 2px 0 0 2px;
   }
   &-txt{
     font-size: 14px;
@@ -1087,6 +1087,7 @@ button#pause{
       top: 1px;
       left: 1px;
       background-image: url(../images/icons/lapki.png);
+      background-repeat: no-repeat;
       width: 29px;
       height: 26px;
     }
@@ -1119,11 +1120,10 @@ button#pause{
 
 
 
-
 .slick-dots {
   bottom: 24px;
-  left: 52px;
-  width: 1500px;
+  left: 701px;
+  max-width: 200px;
 }
 
 .slick-dots li button:before{
@@ -1404,7 +1404,7 @@ button#pause{
       letter-spacing: 0.05em;
     }
     &-links{
-      padding: 10px 0 0;
+      margin: 27px 0 0 0;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -1438,7 +1438,7 @@ button#pause{
       line-height: 24px;
       text-align: center;
       letter-spacing: 0.025em;
-      margin: 24px 0 0 0;
+      margin: 41px 0 0 0
     }
   }
 
