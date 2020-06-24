@@ -26,12 +26,16 @@ body.overflow {
 ========================================== */
 .burger {
   width: 50px;
-  height: 50px;
+  height: 100vh;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  border-radius: 4px;
+  top: 0px;
+  left: 0px;
+  border-radius: 0px;
   z-index: 10;
+  background-color: #000;
+}
+.burger.clicked{
+  background-color: transparent;
 }
 .burger span {
   position: relative;
@@ -42,7 +46,7 @@ body.overflow {
   -ms-user-select: none;
   user-select: none;
   position: absolute;
-  top: 50%;
+  top: 7%;
   left: 50%;
   margin-left: -15px;
   margin-top: -1.5px;

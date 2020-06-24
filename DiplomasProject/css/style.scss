@@ -74,9 +74,9 @@ h1, h2, h3, h4, h5, h6, html, body {
     padding-left: 215px;
     padding-top: 330px;
     padding-bottom: 345px;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
   
   .header__inner-title {
@@ -1286,7 +1286,7 @@ button#pause{
     max-width: 370px;
     width: 100%;
     input{
-      padding: 1px 0 3px 3px;
+      padding: 1px 0 3px 0px;
       border: none;
       width: 100%;
       outline: none;
@@ -1301,6 +1301,7 @@ button#pause{
         text-align: left;
         transform: scale(1.02, 1);
         letter-spacing: 0.05em;
+        padding-left: 3px;
       }
       
       &+input{
