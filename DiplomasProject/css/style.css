@@ -328,8 +328,8 @@ body {
   cursor: pointer;
 }
 
-.works__filter-btn button.active {
-  color: #a4a4a4;
+.mixitup-control-active {
+  color: #a4a4a4 !important;
 }
 
 .works__filter-btn span {
