@@ -13,6 +13,7 @@
     max-width: 650px;
   }
   .news__inner {
+    padding-right: 10px;
     padding-left: 70px;
   }
   .news__item-box {
@@ -288,7 +289,7 @@
 
 @media (max-width: 600px) {
   .header__inner {
-    padding: 150px  0px 150px 95px;
+    padding: 150px 10px 150px 65px;
   }
   .header__inner-title {
     color: #fff;
