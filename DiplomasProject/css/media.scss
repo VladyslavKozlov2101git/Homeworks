@@ -43,16 +43,19 @@
             transform: scale(0.7);
         }
     }
-    .works__inner{
-        padding-left: 70px;
-        padding-right: 30px;
-    }
     .works__item {
         max-width: 570px;
         width: calc(50% - 10px);
     }
-    .reasons__inner {
+    .reasons__inner,
+    .works__inner,
+    .team__items,
+    .members__inner {
         padding: 0 30px 0 70px;
+    }
+    .partners__items{
+        padding: 0 0px 0 50px;
+        
     }
     .reasons__items {
         margin: 20px 20px 0 0;
@@ -60,8 +63,77 @@
     .reason__item-image {
         object-fit: contain;
     }
+    .voyage__inner{
+        padding-left: 70px;
+        &-title{
+            font-size: 36px;   
+        }
+        &-txt{
+            font-size: 14px;
+            max-width: 350px;
+        }
+    }
+
+    .team__item:nth-child(2),
+    .team__item:nth-child(3),
+    .team__item:nth-child(4){
+        margin-left: 30px;
+    }
+    .team__items{
+        padding-left: 70px;
+        margin: 0;
+        justify-content: space-between;
+    }
+    button#play,
+    button#pause {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+    
+
+    
 }
 
+@media (max-width:1000px){
+    .members__items{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .members__item{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .members__item + .members__item {
+        margin-left: 0px;
+    }
+    .partners__items{
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    .partners__item{
+        min-width: 150px;
+        flex-basis: calc(100% / 3);
+    }
+    .partners__item + .partners__item {
+        border-left: none;
+    }
+
+    .skills__items{
+        padding: 0 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills__box{
+        margin: 0 0px 30px 0;
+        padding: 0;
+        &-title,
+        &-txt,
+        &-subtitle{
+            text-align: center;
+        }
+    }
+}
 
 
 
@@ -142,6 +214,26 @@
         font-size: 14px;
     }
 
+    .team__items{
+        padding-left: 30px;
+    }
+    .team__item{
+        height: 154px;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: space-between;
+        &-box{
+            align-items: center; 
+        }
+        &-image{
+            margin: 0;
+        }
+    }
+    .burger {
+        height: 30px;
+        top: 30px;
+    }
+
     
     
   
@@ -169,7 +261,34 @@
     .works__filter-btn button {
         font-size: 12px;
     }
-    
+    .voyage__inner{
+        padding-left: 30px;
+        &-title{
+            font-size: 34px;   
+            line-height: 1.2em;
+        }
+        &-txt{
+            max-width: 315px;
+
+        }
+    }
+    .members__item {
+        max-width: 500px;
+        width: 100%;
+    }
+    .members__inner {
+        padding: 0 30px 0 30px;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        border: 1px solid #dedede;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        background: #fff;
+        cursor: pointer;
+        margin-top: -6px;
+      }
 }
 
 
@@ -179,7 +298,7 @@
     .header__inner {
         padding: 150px  0px 150px 95px;
         &-title{
-            color: #72c3ea ;
+            color: #fff ;
             font-size: 48px;
             max-width: 300px;
         }
@@ -217,11 +336,18 @@
     .reasons__inner{
         padding: 0 10px;
     }
+
+
     .works__item {
         width: 90%;
     }
+
+    
+
+
     .reason__item{
         flex-direction: column;
+        align-items: center;
         &-image{
             margin: 0px 0px 15px 0px;
         }
@@ -234,8 +360,51 @@
         &-txt{
             text-align: center;
         }
+        &-subtitle{
+            text-align: center;
+        }
     }
-     
+
+
+    .voyage__inner{
+        padding-bottom: 70px;
+        &-phone{
+            display: none;
+        }
+    }
+
+    .team__items{
+        flex-wrap: wrap;
+        
+    }
+    .team__item {
+        margin-top: 30px;
+        width: calc(50% - 30px);
+        &-txt{
+            text-align: center;
+        }
+    }
+
+    .team__item:nth-child(2),
+    .team__item:nth-child(3),
+    .team__item:nth-child(4){
+        margin-left: 0px;
+    }
+
+    .team__item:nth-child(1),
+    .team__item:nth-child(4){
+        order: 1;
+    }
+    .team__item:nth-child(2),
+    .team__item:nth-child(3){
+        order: 2;
+    }
+
+    .range-slider__range {
+        left: 10px;
+        right: 10px;
+        bottom: 40px;
+    }
 }
 
 @media (max-width:500px){
@@ -249,7 +418,29 @@
         font-size: 14px;
         text-align: center;
     }
+    .partners__items{
+        height: auto;
+        padding-bottom: 30px;
+        
+    }
+    .partners__item{
+        margin-top: 30px;
+        min-width: 150px;
+        flex-basis: calc(100% / 2);
+        
+    }
 
+}
+
+@media (max-width:460px){
+    .partners__item{
+        flex-basis: 100%;
+        
+    }
+
+    .skills__histogram {
+        transform: rotate(0deg)
+    }
 }
 
 @media (max-width:400px){
@@ -257,7 +448,7 @@
         padding: 150px  0px 150px 90px;
         background-position-x: -770px;
         &-title{
-            color: #72c3ea ;
+            color: #fff;
             font-size: 36px;
             max-width: 200px;
         }
@@ -281,6 +472,14 @@
     .works__filter-btn button {
         margin-top: 15px;
     }
+
+    .voyage__inner{
+        &-txt{
+            max-width: 264px;
+
+        }
+    }
+    
     
 }
 

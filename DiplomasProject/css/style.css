@@ -83,7 +83,7 @@ body {
 .header__inner {
   padding-left: 215px;
   padding-top: 330px;
-  padding-bottom: 358px;
+  padding-bottom: 344px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -115,7 +115,7 @@ body {
   font-weight: 400;
   max-width: 390px;
   line-height: 18px;
-  padding: 4px 0 0 0;
+  padding: 19px 0 0 0;
   letter-spacing: 0.05em;
 }
 
@@ -435,6 +435,10 @@ body {
           align-items: center;
 }
 
+.reasons__inner > a {
+  text-decoration: none;
+}
+
 .reasons__inner-title::after {
   top: 174px;
   left: calc(50% - 28px);
@@ -467,6 +471,10 @@ body {
   -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 72px;
+}
+
+.reason__item a {
+  text-decoration: none;
 }
 
 .reason__item-image {
@@ -520,6 +528,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 .voyage__inner {
@@ -766,6 +775,9 @@ body {
 .members__item-avatar {
   width: 100%;
   height: 320px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .members__item-name {
@@ -900,7 +912,7 @@ button#pause::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 55px;
+  padding-bottom: 52px;
 }
 
 .skills__inner-title {
@@ -1115,7 +1127,7 @@ button#pause::before {
   -webkit-transform: scale(1.02, 1);
           transform: scale(1.02, 1);
   letter-spacing: 0.05em;
-  padding: 10px 14px 0 0px;
+  padding: 26px 11px 0 0px;
 }
 
 .slider__item-author span {

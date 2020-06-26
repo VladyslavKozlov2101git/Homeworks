@@ -40,16 +40,18 @@
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
   }
-  .works__inner {
-    padding-left: 70px;
-    padding-right: 30px;
-  }
   .works__item {
     max-width: 570px;
     width: calc(50% - 10px);
   }
-  .reasons__inner {
+  .reasons__inner,
+  .works__inner,
+  .team__items,
+  .members__inner {
     padding: 0 30px 0 70px;
+  }
+  .partners__items {
+    padding: 0 0px 0 50px;
   }
   .reasons__items {
     margin: 20px 20px 0 0;
@@ -57,6 +59,81 @@
   .reason__item-image {
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .voyage__inner {
+    padding-left: 70px;
+  }
+  .voyage__inner-title {
+    font-size: 36px;
+  }
+  .voyage__inner-txt {
+    font-size: 14px;
+    max-width: 350px;
+  }
+  .team__item:nth-child(2),
+  .team__item:nth-child(3),
+  .team__item:nth-child(4) {
+    margin-left: 30px;
+  }
+  .team__items {
+    padding-left: 70px;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  button#play,
+  button#pause {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .members__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .members__item {
+    width: 50%;
+    margin-top: 30px;
+  }
+  .members__item + .members__item {
+    margin-left: 0px;
+  }
+  .partners__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .partners__item {
+    min-width: 150px;
+    -ms-flex-preferred-size: calc(100% / 3);
+        flex-basis: calc(100% / 3);
+  }
+  .partners__item + .partners__item {
+    border-left: none;
+  }
+  .skills__items {
+    padding: 0 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills__box {
+    margin: 0 0px 30px 0;
+    padding: 0;
+  }
+  .skills__box-title, .skills__box-txt, .skills__box-subtitle {
+    text-align: center;
   }
 }
 
@@ -138,6 +215,34 @@
   .works__filter-btn button {
     font-size: 14px;
   }
+  .team__items {
+    padding-left: 30px;
+  }
+  .team__item {
+    height: 154px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .team__item-box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team__item-image {
+    margin: 0;
+  }
+  .burger {
+    height: 30px;
+    top: 30px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -152,6 +257,33 @@
   .works__filter-btn button {
     font-size: 12px;
   }
+  .voyage__inner {
+    padding-left: 30px;
+  }
+  .voyage__inner-title {
+    font-size: 34px;
+    line-height: 1.2em;
+  }
+  .voyage__inner-txt {
+    max-width: 315px;
+  }
+  .members__item {
+    max-width: 500px;
+    width: 100%;
+  }
+  .members__inner {
+    padding: 0 30px 0 30px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: 1px solid #dedede;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin-top: -6px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -159,7 +291,7 @@
     padding: 150px  0px 150px 95px;
   }
   .header__inner-title {
-    color: #72c3ea;
+    color: #fff;
     font-size: 48px;
     max-width: 300px;
   }
@@ -202,6 +334,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .reason__item-image {
     margin: 0px 0px 15px 0px;
@@ -224,6 +359,48 @@
   .reason__item-txt {
     text-align: center;
   }
+  .reason__item-subtitle {
+    text-align: center;
+  }
+  .voyage__inner {
+    padding-bottom: 70px;
+  }
+  .voyage__inner-phone {
+    display: none;
+  }
+  .team__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team__item {
+    margin-top: 30px;
+    width: calc(50% - 30px);
+  }
+  .team__item-txt {
+    text-align: center;
+  }
+  .team__item:nth-child(2),
+  .team__item:nth-child(3),
+  .team__item:nth-child(4) {
+    margin-left: 0px;
+  }
+  .team__item:nth-child(1),
+  .team__item:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .team__item:nth-child(2),
+  .team__item:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .range-slider__range {
+    left: 10px;
+    right: 10px;
+    bottom: 40px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -237,6 +414,27 @@
     font-size: 14px;
     text-align: center;
   }
+  .partners__items {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .partners__item {
+    margin-top: 30px;
+    min-width: 150px;
+    -ms-flex-preferred-size: calc(100% / 2);
+        flex-basis: calc(100% / 2);
+  }
+}
+
+@media (max-width: 460px) {
+  .partners__item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .skills__histogram {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 
 @media (max-width: 400px) {
@@ -245,7 +443,7 @@
     background-position-x: -770px;
   }
   .header__inner-title {
-    color: #72c3ea;
+    color: #fff;
     font-size: 36px;
     max-width: 200px;
   }
@@ -270,6 +468,9 @@
   }
   .works__filter-btn button {
     margin-top: 15px;
+  }
+  .voyage__inner-txt {
+    max-width: 264px;
   }
 }
 /*# sourceMappingURL=media.css.map */

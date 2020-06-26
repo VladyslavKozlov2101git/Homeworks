@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     padding: 0;
   }
   
+  
   * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -422,6 +423,9 @@ h1, h2, h3, h4, h5, h6, html, body {
             flex-direction: column;
     padding-bottom: 32px;
     align-items: center;
+    >a{
+      text-decoration: none;
+    }
   }
   
   .reasons__inner-title::after {
@@ -456,6 +460,9 @@ h1, h2, h3, h4, h5, h6, html, body {
         -ms-flex-direction: row;
             flex-direction: row;
     margin-bottom: 72px;
+    a{
+      text-decoration: none;
+    }
   }
   
   .reason__item-image {
@@ -472,6 +479,7 @@ h1, h2, h3, h4, h5, h6, html, body {
             transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin-left: 3px;
+    
   }
   
   .reason__item-title a {
@@ -509,6 +517,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
   }
   
   .voyage__inner {
@@ -754,6 +763,9 @@ h1, h2, h3, h4, h5, h6, html, body {
   .members__item-avatar {
     width: 100%;
     height: 320px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
   
   .members__item-name {
