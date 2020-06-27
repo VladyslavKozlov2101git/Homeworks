@@ -16,11 +16,13 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="link__home">
         <div class="container">
             <div class="header__inner" style="background-image: url(images/header__back.jpg);">
                 <h1 class="header__inner-title">
-                    Tomorrow is a <span>brand</span> new day!
+                    <a href="#">
+                        Tomorrow is a <span>brand</span> new day!
+                    </a>                  
 
                 </h1>
                 <p class="header__inner-text">
@@ -38,11 +40,11 @@
           
           <nav>
             <ul class="main">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Our Works</a></li>
-              <li><a href="#">Our Team</a></li>
-              <li><a href="#">Our News</a></li>
-              <li><a href="#">CONTACT US</a></li>
+              <li><a href="#link__home">Home</a></li>
+              <li><a href="#link__works">Our Works</a></li>
+              <li><a href="#link__team">Our Team</a></li>
+              <li><a href="#link__news">Our News</a></li>
+              <li><a href="#link__contacts">CONTACT US</a></li>
             </ul>
             
             <div class="about">
@@ -67,15 +69,15 @@
          <section class="about">
             <div class="container">
                 <div class="about__inner">
-                    <div class="about__inner-title section__title" >
+                    <h2 class="about__inner-title section__title" >
                         About us
-                    </div>
+                    </h2>
                     <div class="about__inner-items">
                         <div class="about__item">
                             <div class="about__item-top">
-                                <div class="about__item-title">
+                                <h3 class="about__item-title">
                                    <a href="#">Website Design & Development </a> 
-                                </div>
+                                </h3>
                                 <a class="about__item-link" href="#">
                                     <img src="images/icons/arrow.png" alt="arrow">
                                 </a>
@@ -88,9 +90,9 @@
 
                         <div class="about__item">
                             <div class="about__item-top">
-                                <div class="about__item-title">
+                                <h3 class="about__item-title">
                                     <a href="#">Graphic Design & Advertising </a>
-                                </div>
+                                </h3>
                                 <a class="about__item-link" href="#">
                                     <img src="images/icons/arrow.png" alt="arrow">
                                 </a>
@@ -103,9 +105,9 @@
 
                         <div class="about__item">
                             <div class="about__item-top">
-                                <div class="about__item-title">
+                                <h3 class="about__item-title">
                                     <a href="#">Advertising & Marketing Strategy</a>
-                                </div>
+                                </h3>
                                 <a class="about__item-link" href="#">
                                     <img src="images/icons/arrow.png" alt="arrow">
                                 </a>
@@ -122,12 +124,12 @@
             </div>
         </section>
 
-        <section class="works">
+        <section class="works" id="link__works">
             <div class="container">
                 <div class="works__inner">
-                    <div class="works__inner-title section__title" >
+                    <h2 class="works__inner-title section__title" >
                         Our Works
-                    </div>
+                    </h2>
 
                     <div class="works__filter-btn">
                         <button type="button" data-filter="all" >All</button>
@@ -145,9 +147,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work1.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">Sample</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Design, Bottle
                             </p>
@@ -157,9 +159,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work2.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">On the road</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Branding, Design, Logotype
                             </p>
@@ -169,9 +171,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work3.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">Terminal</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Design, Logotype, Terminal
                             </p>
@@ -181,9 +183,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work4.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">Sample</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Design, Bottle
                             </p>
@@ -193,9 +195,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work5.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">Noteckie</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Branding, Design, Logotype
                             </p>
@@ -205,9 +207,9 @@
                             <a class="works__item-image" href="#">
                                 <img src="images/work6.jpg" alt="works">
                             </a>
-                            <div class="works__item-title">
+                            <h4 class="works__item-title">
                                 <a href="#">Voyageur du temps</a>
-                            </div>
+                            </h4>
                             <p class="works__item-categories">
                                 Design, Logotype, Terminal
                             </p>
@@ -224,18 +226,18 @@
         <section class="reasons">
             <div class="container">
                 <div class="reasons__inner">
-                    <div class="reasons__inner-title section__title" >
+                    <h2 class="reasons__inner-title section__title" >
                         why choose us
-                    </div>
+                    </h2>
 
                     <div class="reasons__items">
                         <div class="reason__item">
                             <img class="reason__item-image" src="images/icons/Shape1.png" alt="shape">
                             
                             <div class="reason__item-box">
-                                <div class="reason__item-title">
+                                <h3 class="reason__item-title">
                                     <a href="#">BEAUTIFUL & ENJOYABLE DESIGNS</a>
-                                </div>
+                                </h3>
                                 <div class="reason__item-subtitle">
                                     We define the trends. Enough Said!
                                 </div>
@@ -249,9 +251,9 @@
                             <img class="reason__item-image" src="images/icons/Shape2.png" alt="shape">
 
                             <div class="reason__item-box">
-                                <div class="reason__item-title">
+                                <h3 class="reason__item-title">
                                     <a href="#">PERFECT LAYOUT & EFFICIENT CODING</a>
-                                </div>
+                                </h3>
                                 <div class="reason__item-subtitle">
                                     We produce top class code
                                 </div>
@@ -265,9 +267,9 @@
                             <img class="reason__item-image" src="images/icons/Shape3.png" alt="shape">
 
                             <div class="reason__item-box">
-                                <div class="reason__item-title">
+                                <h3 class="reason__item-title">
                                     <a href="#">DEDICATED SUPPORT & UPDATES</a>
-                                </div>
+                                </h3>
                                 <div class="reason__item-subtitle">
                                     Team of experts to assist you
                                 </div>
@@ -281,9 +283,9 @@
                             <img class="reason__item-image" src="images/icons/Shape4.png" alt="shape">
 
                             <div class="reason__item-box">
-                                <div class="reason__item-title">
+                                <h3 class="reason__item-title">
                                     <a href="#">DEDICATED SUPPORT & UPDATES</a> 
-                                </div>
+                                </h3>
                                 <div class="reason__item-subtitle">
                                     Team of experts to assist you
                                 </div>
@@ -300,9 +302,9 @@
         <section class="voyage" style="background-image: url(images/voyage-bgnd.jpg);">
             <div class="container">
                 <div class="voyage__inner">
-                    <div class="voyage__inner-title">
+                    <h2 class="voyage__inner-title">
                        <a href="#">Voyageur du temps</a> 
-                    </div>
+                    </h2>
                     <p class="voyage__inner-txt">
                         Our last responsive work in process. Just use the link below 
                         to watch what we are doing right now. Hope you like it!
@@ -319,7 +321,7 @@
             </div>
         </section>
 
-        <sectiom class="team">
+        <sectiom class="team" id="link__team">
             <div class="container">
                 <div class="team__items">
                     <div class="team__item">
@@ -378,9 +380,9 @@
         <section class="members">
             <div class="container">
                 <div class="members__inner">
-                    <div class="members__inner-title section__title" >
+                    <h2 class="members__inner-title section__title" >
                         our team
-                    </div>
+                    </h2>
 
                     <p class="members__inner-txt">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
@@ -461,15 +463,15 @@
         <section class="skills">
             <div class="container">
                 <div class="skills__inner">
-                    <div class="skills__inner-title section__title" >
+                    <h2 class="skills__inner-title section__title" >
                         our skills
-                    </div>
+                    </h2>
 
                     <div class="skills__items">
                         <div class="skills__box">
-                            <div class="skills__box-title">
+                            <h3 class="skills__box-title">
                                 perfect layout & efficient coding
-                            </div>
+                            </h3>
                             <div class="skills__box-subtitle">
                                 We produce top class code
                             </div>
@@ -594,12 +596,12 @@
 
         </section>
 
-        <section class="news">
+        <section class="news" id="link__news">
             <div class="container">
                 <div class="news__inner">
-                    <div class="news__inner-title section__title">
+                    <h2 class="news__inner-title section__title">
                         OUR NEWS
-                    </div>
+                    </h2>
                     <p class="news__inner-txt subtitle-txt">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
@@ -610,9 +612,11 @@
                         <div class="news__item">
                             <img class="news__item-image" src="images/poster.jpg" alt="image">
                             <div class="news__item-box">
-                                <div class="news__item-title">
-                                    PERFECT LAYOUT
-                                </div>
+                                <h3 class="news__item-title">
+                                    <a href="#">
+                                        PERFECT LAYOUT
+                                    </a>                                    
+                                </h3>
                             <time class="news__item-time" datetime="2014-08-11">
                                 11 august 2014
                             </time>
@@ -635,9 +639,11 @@
                         <div class="news__item">
                             <img class="news__item-image" src="images/poster.jpg" alt="image">
                             <div class="news__item-box">
-                                <div class="news__item-title">
-                                    PERFECT LAYOUT
-                                </div>
+                                <h3 class="news__item-title">
+                                    <a href="#">
+                                        PERFECT LAYOUT
+                                    </a> 
+                                </h3>
                             <time class="news__item-time" datetime="2014-08-11">
                                 11 august 2014
                             </time>
@@ -670,9 +676,9 @@
         <section class="form">
             <div class="container">
                 <div class="form__inner">
-                    <div class="form__inner-title section__title">
+                    <h2 class="form__inner-title section__title">
                         Thank You!
-                    </div>
+                    </h2>
                     <form action="">
                         <input type="text" placeholder="name">
                         <input type="email" placeholder="e-mail">
@@ -685,12 +691,12 @@
             </div>
         </section> 
 
-        <section class="contacts">
+        <section class="contacts" id="link__contacts">
             <div class="container">
                 <div class="contacts__inner">
-                    <div class="contacts__inner-title section__title">
+                    <h2 class="contacts__inner-title section__title">
                         Contact Us
-                    </div>
+                    </h2>
                     <p class="contacts__inner-txt subtitle-txt">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
                         Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
