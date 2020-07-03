@@ -141,7 +141,18 @@
     .header__inner {
         padding: 250px  0px 250px 150px;
         background-position: right;
-        
+        &-box{
+            background-color: rgba(250, 240, 215, .7);
+            padding-bottom: 20px;
+        }
+        &-title{
+            color: #7b423d;
+        }
+        &-text{
+            color: #421b10;
+            font-size: 14px;
+            
+        }
     }
     .burger span, .burger span::before, .burger span::after {
         background-color: #000;
@@ -296,15 +307,22 @@
 
 @media (max-width:600px){
     .header__inner {
-        padding: 150px 10px 150px 65px;
+        padding: 150px 65px 150px 65px;
         &-title{
             color: #fff ;
             font-size: 48px;
             max-width: 300px;
+            text-align: center;
         }
         &-text{
-            color: #34506d;
+            color: #000;
             max-width: 300px;
+            text-align: center;
+        }
+        &-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
     .form__inner form {
@@ -429,6 +447,9 @@
         flex-basis: calc(100% / 2);
         
     }
+    .header__inner {
+        background-position: -700px;
+    }
 
 }
 
@@ -445,7 +466,7 @@
 
 @media (max-width:400px){
     .header__inner {
-        padding: 150px  0px 150px 90px;
+        padding: 150px 15px 150px 15px;
         background-position-x: -770px;
         &-title{
             color: #fff;

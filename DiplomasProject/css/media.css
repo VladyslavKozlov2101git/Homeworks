@@ -143,6 +143,17 @@
     padding: 250px  0px 250px 150px;
     background-position: right;
   }
+  .header__inner-box {
+    background-color: rgba(250, 240, 215, 0.7);
+    padding-bottom: 20px;
+  }
+  .header__inner-title {
+    color: #7b423d;
+  }
+  .header__inner-text {
+    color: #421b10;
+    font-size: 14px;
+  }
   .burger span, .burger span::before, .burger span::after {
     background-color: #000;
   }
@@ -289,16 +300,30 @@
 
 @media (max-width: 600px) {
   .header__inner {
-    padding: 150px 10px 150px 65px;
+    padding: 150px 65px 150px 65px;
   }
   .header__inner-title {
     color: #fff;
     font-size: 48px;
     max-width: 300px;
+    text-align: center;
   }
   .header__inner-text {
-    color: #34506d;
+    color: #000;
     max-width: 300px;
+    text-align: center;
+  }
+  .header__inner-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .form__inner form {
     max-width: 75%;
@@ -425,6 +450,9 @@
     -ms-flex-preferred-size: calc(100% / 2);
         flex-basis: calc(100% / 2);
   }
+  .header__inner {
+    background-position: -700px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -440,7 +468,7 @@
 
 @media (max-width: 400px) {
   .header__inner {
-    padding: 150px  0px 150px 90px;
+    padding: 150px 15px 150px 15px;
     background-position-x: -770px;
   }
   .header__inner-title {

@@ -22,7 +22,12 @@ h1, h2, h3, h4, h5, h6, html, body {
   .container {
     max-width: 1600px;
     margin: 0 auto;
+    
   }
+  .container.container-fluid{
+    max-width: none;    
+  }
+  
   
   @font-face {
     font-family: 'icomoon';
@@ -75,6 +80,8 @@ h1, h2, h3, h4, h5, h6, html, body {
   /*********************************************
   ****************HEADER*********************
   **********************************************/
+  
+ 
   .header__inner {
     padding-left: 215px;
     padding-top: 330px;
@@ -82,6 +89,7 @@ h1, h2, h3, h4, h5, h6, html, body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
   }
   
   .header__inner-title {
@@ -92,8 +100,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     font-weight: 300;
     line-height: 62px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
   }
   
@@ -159,8 +165,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     text-transform: uppercase;
     line-height: 0.75;
     text-align: center;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     position: relative;
   }
   .about__inner-title{
@@ -223,12 +227,9 @@ h1, h2, h3, h4, h5, h6, html, body {
   .about__item-title {
     font-size: 18px;
     color: black;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     text-align: left;
     font-family: 'Lobster', cursive;
     letter-spacing: 0.05em;
-    margin-left: -13px;
   }
   
   .about__item-title a {
@@ -249,11 +250,9 @@ h1, h2, h3, h4, h5, h6, html, body {
     font-weight: 400;
     max-width: 304px;
     letter-spacing: 0.05em;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     height: 108px;
     overflow: hidden;
-    margin: 16px 0px 0 -9px;
+    margin: 16px 0px 0 0px;
   }
 
 
@@ -318,8 +317,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.05em;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     outline: none;
     cursor: pointer;
   }
@@ -351,6 +348,7 @@ h1, h2, h3, h4, h5, h6, html, body {
         -ms-flex-align: center;
             align-items: center;
     margin: 3px 0 0 -4px;
+    overflow: hidden;
   }
   
   .works__item {
@@ -384,8 +382,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     line-height: 28px;
     text-align: center;
     letter-spacing: 0.05em;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     font-family: 'Lobster', cursive;
     font-weight: 400;
     padding-top: 24px;
@@ -479,8 +475,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     font-weight: bold;
     line-height: 24px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin-left: 3px;
     
@@ -507,8 +501,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     color: #444444;
     line-height: 22px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin-left: 7px;
     margin-top: 14px;
@@ -564,8 +556,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     line-height: 1.25;
     letter-spacing: 0.05em;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     max-width: 450px;
   }
   
@@ -674,8 +664,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     text-transform: uppercase;
     line-height: 24px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
   }
   
   .team__item-txt {
@@ -684,8 +672,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     color: #444444;
     line-height: 24px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin: 8px 0 0 -1px;
   }
@@ -714,8 +700,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     font-style: italic;
     line-height: 22px;
     text-align: center;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     max-width: 370px;
     padding: 20px 0px 8px 2px;
@@ -779,8 +763,6 @@ h1, h2, h3, h4, h5, h6, html, body {
     text-transform: uppercase;
     line-height: 24px;
     text-align: center;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: .05em;
     margin: 29px 0 0 0px;
   }
@@ -972,9 +954,7 @@ button#pause{
     letter-spacing: 0px;
     line-height: 24px;
     color: rgb(102,102,102);
-    font-style: italic;    
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
+    font-style: italic;
     letter-spacing: 0.05em;
     margin: 2px 0 0 2px;
   }
@@ -984,8 +964,6 @@ button#pause{
     color: #444444;
     line-height: 23px;
     text-align: left;
-    -webkit-transform: scale(1.02, 1);
-            transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin: 12px 0 0 0;
     padding-left: 5px;
@@ -1093,7 +1071,6 @@ button#pause{
     color: #444444;
     line-height: 24px;
     text-align: left;
-    transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin-left: 7px;
     margin-top: 14px;
@@ -1115,7 +1092,6 @@ button#pause{
     color: rgb(0, 0, 0);
     line-height: 24px;
     text-align: right;
-    transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     padding: 26px 11px 0 0px;
     span{
@@ -1143,14 +1119,14 @@ button#pause{
 }
 
 .slick-dots li button:before{
-  font-size: 24px;
+  font-size: 10px;
   color: #cbcbcb;
   opacity: 1;
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  font-size: 34px;
+  font-size: 12px;
 }
 
 
@@ -1185,7 +1161,6 @@ button#pause{
   letter-spacing: 0.05em;
   margin: 14px 0px 40px 0px;
   padding: 0;
-  transform: scale(1.02, 1);
 }
 .news__items{
   display: flex;
@@ -1222,7 +1197,6 @@ button#pause{
     line-height: 24px;
     letter-spacing: 0.05em;
     text-align: left;
-    transform: scale(1.02, 1);
     margin: 0px 0 0 2px;
   }
   &-txt{
@@ -1231,7 +1205,6 @@ button#pause{
     color: rgb(68, 68, 68);
     line-height: 23px;
     text-align: left;
-    transform: scale(1.02, 1);
     letter-spacing: 0.05em;
     margin: 18px 0 11px 7px;
     padding: 0px 9px 0 0;
@@ -1315,7 +1288,6 @@ button#pause{
         color: rgb(0, 0, 0);
         line-height: 28px;
         text-align: left;
-        transform: scale(1.02, 1);
         letter-spacing: 0.05em;
         padding-left: 3px;
       }
@@ -1378,7 +1350,6 @@ button#pause{
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.05em;
-  transform: scale(1.02, 1);
   text-decoration: none;
   &:nth-child(2){
     padding-left: 17px;
